@@ -2,7 +2,7 @@ module Metaform exposing (..)
 
 import Html
 
-text = "Hello world"
+text = "Hello Phoenix!"
 
 main =
-    Html.text text
+    Html.text "Test"

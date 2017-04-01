@@ -19,3 +19,8 @@ import "phoenix_html"
 // paths "./socket" or full ones "web/static/js/socket".
 
 // import socket from "./socket"
+import Elm from '../../priv/static/js/metaform.js'
+
+
+let node = document.getElementById('metaform');
+let app = Elm.Metaform.embed(node)

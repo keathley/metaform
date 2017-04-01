@@ -35,11 +35,8 @@ exports.config = {
     assets: /^(static)/
   },
 
-  // Phoenix paths configuration
   paths: {
-    // Dependencies and current project directories to watch
-    watched: ["static", "css", "js", "vendor"],
-    // Where to compile files to
+      watched: ["static", "js", "css", "elm"],
     public: "../priv/static"
   },
 
@@ -48,7 +45,13 @@ exports.config = {
     babel: {
       // Do not use ES6 compiler in vendor code
       ignore: [/vendor/]
-    }
+    },
+
+      elmBrunch: {
+          mainModules: ["elm/Metaform.elm"],
+          makeParameters: ['--debug'],
+          executablePath: 'node_modules/elm/binwrappers',
+      },
   },
 
   modules: {
@@ -59,5 +62,7 @@ exports.config = {
 
   npm: {
     enabled: true
-  }
+  },
+
+    notifications: false
 };

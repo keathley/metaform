@@ -7795,9 +7795,9 @@ var _elm_lang$html$Html$summary = _elm_lang$html$Html$node('summary');
 var _elm_lang$html$Html$menuitem = _elm_lang$html$Html$node('menuitem');
 var _elm_lang$html$Html$menu = _elm_lang$html$Html$node('menu');
 
-var _user$project$Metaform$text = 'Hello world';
 var _user$project$Metaform$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProgram(
-	_elm_lang$html$Html$text(_user$project$Metaform$text));
+	_elm_lang$html$Html$text('Test'));
+var _user$project$Metaform$text = 'Hello Phoenix!';
 
 var Elm = {};
 Elm['Metaform'] = Elm['Metaform'] || {};
