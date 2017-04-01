@@ -14,5 +14,10 @@
   <body>
     <div id="metaform"></div>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    <script src="<%= static_path(@conn, "/js/metaform.js") %>"></script>
+    <script>
+      var node = document.getElementById('metaform')
+      var app = Elm.Metaform.embed(node)
+    </script>
   </body>
 </html>

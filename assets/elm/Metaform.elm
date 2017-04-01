@@ -5,4 +5,4 @@ import Html
 text = "Hello Phoenix!"
 
 main =
-    Html.text "Test"
+    Html.text text
