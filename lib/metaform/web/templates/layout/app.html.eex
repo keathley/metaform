@@ -12,12 +12,17 @@
   </head>
 
   <body>
-    <div id="metaform"></div>
+    <div class="app">
+      <%= render @view_module, @view_template, assigns %>
+    </div>
+    <!-- <div id="metaform">
+
+         </div> -->
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
     <script src="<%= static_path(@conn, "/js/metaform.js") %>"></script>
     <script>
-      var node = document.getElementById('metaform')
-      var app = Elm.Metaform.embed(node)
+     var node = document.getElementById('metaform')
+     var app = Elm.Metaform.embed(node)
     </script>
   </body>
 </html>
